@@ -11,7 +11,7 @@ class DonutShapeTidbit extends StatelessWidget {
       builder: (context, _) {
         return Center(
           child: Container(
-            color: Color(0xFFFFFFFF),
+            color: Color(0xFFDDDDDD),
             child: Center(
               child: DonutShape(),
             ),
