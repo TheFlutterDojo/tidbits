@@ -1,15 +1,15 @@
 import 'package:flutter/widgets.dart';
 
-class Disk extends StatefulWidget {
+class DonutShape extends StatefulWidget {
   @override
-  _DiskState createState() => _DiskState();
+  _DonutShapeState createState() => _DonutShapeState();
 }
 
-class _DiskState extends State<Disk> {
+class _DonutShapeState extends State<DonutShape> {
   @override
   Widget build(BuildContext context) {
     return ClipPath(
-      clipper: _DiskClipper(),
+      clipper: _DonutClipper(),
       child: Container(
         width: double.infinity,
         child: Image.network(
@@ -21,11 +21,9 @@ class _DiskState extends State<Disk> {
   }
 }
 
-class _DiskClipper extends CustomClipper<Path> {
+class _DonutClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
-    print(size);
-
     return Path.combine(
       PathOperation.difference,
       Path()

@@ -1,7 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:sandbox_flutter/music_player_app/widgets/disk.dart';
 
-class MusicPlayerApp extends StatelessWidget {
+import './widgets/donut_shape.dart';
+
+class DonutShapeTidbit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetsApp(
@@ -12,7 +13,7 @@ class MusicPlayerApp extends StatelessWidget {
           child: Container(
             color: Color(0xFFFFFFFF),
             child: Center(
-              child: Disk(),
+              child: DonutShape(),
             ),
           ),
         );
