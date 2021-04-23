@@ -37,6 +37,7 @@ void main() {
   });
 
   runApp(WidgetsApp(
+    debugShowCheckedModeBanner: false,
     color: Color(0xFFFFFFFF),
     onGenerateRoute: _router.generator,
     initialRoute: "/",

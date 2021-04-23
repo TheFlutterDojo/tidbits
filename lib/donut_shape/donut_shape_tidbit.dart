@@ -6,6 +6,7 @@ class DonutShapeTidbit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetsApp(
+      debugShowCheckedModeBanner: false,
       textStyle: TextStyle(color: Color(0xFF000000)),
       color: Color(0xFF000000),
       builder: (context, _) {
